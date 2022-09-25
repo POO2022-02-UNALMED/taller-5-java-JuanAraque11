@@ -18,7 +18,7 @@ public class Pez extends Animal {
 	}
 
 	public Pez() {
-		this(null,-1,null,null,null,-1);
+		this(null,0,null,null,null,0);
 	}
 	
 	/*Hacer lo mismo que en mamifero*/

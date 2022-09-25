@@ -17,7 +17,7 @@ public class Mamifero extends Animal {
 	}
 	
 	public Mamifero() {
-		this(null,-1,null,null,false,-1);
+		this(null,0,null,null,false,0);
 	}
 	
 	public int cantidadMamiferos(){
