@@ -8,7 +8,6 @@ public class Reptil extends Animal {
 	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
-	public static int Repti=listado.size();
 
 	public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola) {
 		super(nombre, edad, habitat, genero);
@@ -21,7 +20,7 @@ public class Reptil extends Animal {
 	
 	/*Hacer lo mismo que en mamifero*/
 	
-	public int cantidadReptiles(){
+	public static int cantidadReptiles(){
 		return iguanas+serpientes;
 	}
 	@Override

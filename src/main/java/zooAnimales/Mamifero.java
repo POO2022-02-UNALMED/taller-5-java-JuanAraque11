@@ -8,7 +8,6 @@ public class Mamifero extends Animal {
 	public static int leones;
 	private boolean pelaje;
 	private int patas;
-	public static int Mami=listado.size();
 	
 	public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
 		super(nombre, edad, habitat, genero);
@@ -20,7 +19,7 @@ public class Mamifero extends Animal {
 		this(null,0,null,null,false,0);
 	}
 	
-	public int cantidadMamiferos(){
+	public static int cantidadMamiferos(){
 		return caballos+leones;
 	}
 

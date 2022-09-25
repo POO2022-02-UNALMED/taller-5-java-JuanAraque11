@@ -8,8 +8,6 @@ public class Pez extends Animal {
 	public static int bacalaos;
 	private String colorEscamas;
 	private int cantidadAletas;
-	public static int Pesi=listado.size();
-	
 	
 	public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
 		super(nombre, edad, habitat, genero);
@@ -23,7 +21,7 @@ public class Pez extends Animal {
 	
 	/*Hacer lo mismo que en mamifero*/
 
-	public int cantidadPeces(){
+	public static int cantidadPeces(){
 		return salmones+bacalaos;
 	}
 
