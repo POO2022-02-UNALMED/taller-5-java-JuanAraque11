@@ -13,6 +13,7 @@ public class Reptil extends Animal {
 		super(nombre, edad, habitat, genero);
 		this.colorEscamas = colorEscamas;
 		this.largoCola = largoCola;
+		listado.add(this);
 	}
 	public Reptil() {
 		this(null,0,null,null,null,0);
@@ -21,7 +22,7 @@ public class Reptil extends Animal {
 	/*Hacer lo mismo que en mamifero*/
 	
 	public static int cantidadReptiles(){
-		return iguanas+serpientes;
+		return listado.size();
 	}
 	@Override
 	public String movimiento() {
@@ -36,7 +37,6 @@ public class Reptil extends Animal {
 		Reptil iguana = new Reptil(nombre, edad, habitat, genero, colorEscamas, largoCola);
 		listado.add(iguana);
 		iguanas++;
-		Animal.aumentaTotal(1);
 		return iguana;
 	}
 	
@@ -48,7 +48,6 @@ public class Reptil extends Animal {
 		Reptil serpi = new Reptil(nombre, edad, habitat, genero, colorEscamas, largoCola);
 		listado.add(serpi);
 		serpientes++;
-		Animal.aumentaTotal(1);
 		return serpi;
 	}
 	

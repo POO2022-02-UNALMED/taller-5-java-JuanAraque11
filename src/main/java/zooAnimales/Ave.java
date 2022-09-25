@@ -11,6 +11,7 @@ public class Ave extends Animal {
 	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
 		super(nombre, edad, habitat, genero);
 		this.colorPlumas = colorPlumas;
+		listado.add(this);
 	}
 
 	public Ave() {
@@ -20,7 +21,7 @@ public class Ave extends Animal {
 	/*Hacer lo mismo que en mamifero*/
 	
 	public static int cantidadAves(){
-		return halcones + aguilas;
+		return listado.size();
 	}
 
 	@Override
@@ -35,7 +36,6 @@ public class Ave extends Animal {
 		Ave halcon = new Ave(nombre, edad, habitat, genero, colorPlumas);
 		listado.add(halcon);
 		halcones++;
-		Animal.aumentaTotal(1);
 		return halcon;
 	}
 	
@@ -46,7 +46,6 @@ public class Ave extends Animal {
 		Ave agui = new Ave(nombre, edad, habitat, genero, colorPlumas);
 		listado.add(agui);
 		aguilas ++;
-		Animal.aumentaTotal(1);
 		return agui;
 	}
 

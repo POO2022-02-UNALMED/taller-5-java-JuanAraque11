@@ -13,6 +13,7 @@ public class Mamifero extends Animal {
 		super(nombre, edad, habitat, genero);
 		this.pelaje = pelaje;
 		this.patas = patas;
+		listado.add(this);
 	}
 	
 	public Mamifero() {
@@ -20,7 +21,7 @@ public class Mamifero extends Animal {
 	}
 	
 	public static int cantidadMamiferos(){
-		return caballos+leones;
+		return listado.size();
 	}
 
 	public static Mamifero crearCaballo(String nombre, int edad, String genero) {
@@ -31,7 +32,6 @@ public class Mamifero extends Animal {
 		Mamifero caba = new Mamifero(nombre, edad, habitat, genero, pelaje, patas);
 		listado.add(caba);
 		caballos ++;
-		Animal.aumentaTotal(1);
 		return caba;
 	}
 	
@@ -43,7 +43,6 @@ public class Mamifero extends Animal {
 		Mamifero leon = new Mamifero(nombre, edad, habitat, genero, pelaje, patas);
 		listado.add(leon);
 		leones ++;
-		Animal.aumentaTotal(1);
 		return leon;
 	}
 

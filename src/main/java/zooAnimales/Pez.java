@@ -13,6 +13,7 @@ public class Pez extends Animal {
 		super(nombre, edad, habitat, genero);
 		this.colorEscamas = colorEscamas;
 		this.cantidadAletas = cantidadAletas;
+		listado.add(this);
 	}
 
 	public Pez() {
@@ -22,7 +23,7 @@ public class Pez extends Animal {
 	/*Hacer lo mismo que en mamifero*/
 
 	public static int cantidadPeces(){
-		return salmones+bacalaos;
+		return listado.size();
 	}
 
 	@Override
@@ -38,7 +39,6 @@ public class Pez extends Animal {
 		Pez salmon = new Pez(nombre, edad, habitat, genero, colorEscamas, cantidadAletas);
 		listado.add(salmon);
 		salmones++;
-		Animal.aumentaTotal(1);
 		return salmon;
 	}
 	
@@ -50,7 +50,6 @@ public class Pez extends Animal {
 		Pez bacalao = new Pez(nombre, edad, habitat, genero, colorEscamas, cantidadAletas);
 		listado.add(bacalao);
 		bacalaos++;
-		Animal.aumentaTotal(1);
 		return bacalao;
 	}
 
