@@ -43,11 +43,11 @@ public class Zoologico {
 		this.ubicacion = ubicacion;
 	}
 
-	public static ArrayList<Zona> getZonas() {
+	public static ArrayList<Zona> getZona() {
 		return zonas;
 	}
 
-	public static void setZonas(ArrayList<Zona> zonas) {
+	public static void setZona(ArrayList<Zona> zonas) {
 		Zoologico.zonas = zonas;
 	}
 
