@@ -37,8 +37,8 @@ public class Pez extends Animal {
 		String habitat="oceano";
 		
 		Pez salmon = new Pez(nombre, edad, habitat, genero, colorEscamas, cantidadAletas);
-		listado.add(salmon);
 		salmones++;
+		Animal.aumentaTotal(1);
 		return salmon;
 	}
 	
@@ -48,8 +48,8 @@ public class Pez extends Animal {
 		String habitat="oceano";
 		
 		Pez bacalao = new Pez(nombre, edad, habitat, genero, colorEscamas, cantidadAletas);
-		listado.add(bacalao);
 		bacalaos++;
+		Animal.aumentaTotal(1);
 		return bacalao;
 	}
 

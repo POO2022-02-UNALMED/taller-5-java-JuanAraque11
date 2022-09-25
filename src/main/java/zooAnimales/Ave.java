@@ -34,8 +34,8 @@ public class Ave extends Animal {
 		String habitat = "montanas";
 		
 		Ave halcon = new Ave(nombre, edad, habitat, genero, colorPlumas);
-		listado.add(halcon);
 		halcones++;
+		Animal.aumentaTotal(1);
 		return halcon;
 	}
 	
@@ -44,8 +44,8 @@ public class Ave extends Animal {
 		String habitat = "montanas";
 		
 		Ave agui = new Ave(nombre, edad, habitat, genero, colorPlumas);
-		listado.add(agui);
 		aguilas ++;
+		Animal.aumentaTotal(1);
 		return agui;
 	}
 

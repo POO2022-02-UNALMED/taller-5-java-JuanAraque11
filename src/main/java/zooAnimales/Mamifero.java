@@ -30,8 +30,8 @@ public class Mamifero extends Animal {
 		String habitat = "pradera";
 		
 		Mamifero caba = new Mamifero(nombre, edad, habitat, genero, pelaje, patas);
-		listado.add(caba);
 		caballos ++;
+		Animal.aumentaTotal(1);
 		return caba;
 	}
 	
@@ -41,8 +41,8 @@ public class Mamifero extends Animal {
 		String habitat = "selva";
 		
 		Mamifero leon = new Mamifero(nombre, edad, habitat, genero, pelaje, patas);
-		listado.add(leon);
 		leones ++;
+		Animal.aumentaTotal(1);
 		return leon;
 	}
 

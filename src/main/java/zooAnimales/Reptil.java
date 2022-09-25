@@ -35,8 +35,8 @@ public class Reptil extends Animal {
 		int largoCola= 3;
 		
 		Reptil iguana = new Reptil(nombre, edad, habitat, genero, colorEscamas, largoCola);
-		listado.add(iguana);
 		iguanas++;
+		Animal.aumentaTotal(1);
 		return iguana;
 	}
 	
@@ -46,8 +46,8 @@ public class Reptil extends Animal {
 		int largoCola= 1;
 		
 		Reptil serpi = new Reptil(nombre, edad, habitat, genero, colorEscamas, largoCola);
-		listado.add(serpi);
 		serpientes++;
+		Animal.aumentaTotal(1);
 		return serpi;
 	}
 	
