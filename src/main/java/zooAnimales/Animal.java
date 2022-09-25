@@ -27,7 +27,7 @@ public class Animal {
 		totalAnimales = totalAnimales + aume;
 	}
 	
-	public String totalPorTipo() {
+	public static String totalPorTipo() {
 		return "Mamiferos: "+ Mamifero.Mami +"\n" + 
 	           "Aves: " + Ave.Avi + "\n" +
 	           "Reptiles: "+ Reptil.Repti  +"\n" + 
