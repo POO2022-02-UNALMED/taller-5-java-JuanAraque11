@@ -16,7 +16,7 @@ public class Reptil extends Animal {
 		this.largoCola = largoCola;
 	}
 	public Reptil() {
-		this(null,0,null,null,null,0);
+		this(null,-1,null,null,null,-1);
 	}
 	
 	/*Hacer lo mismo que en mamifero*/
