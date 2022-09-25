@@ -32,7 +32,7 @@ public class Pez extends Animal {
 		return "nadar";
 	}
 	
-	public void crearSalmon(String nombre, int edad, String genero) {
+	public static Pez crearSalmon(String nombre, int edad, String genero) {
 		String colorEscamas= "rojo";
 		int cantidadAletas= 6;
 		String habitat="oceano";
@@ -41,9 +41,10 @@ public class Pez extends Animal {
 		listado.add(salmon);
 		salmones++;
 		Animal.aumentaTotal(1);
+		return salmon;
 	}
 	
-	public void crearBacalao(String nombre, int edad, String genero) {
+	public static Pez crearBacalao(String nombre, int edad, String genero) {
 		String colorEscamas= "gris";
 		int cantidadAletas= 6;
 		String habitat="oceano";
@@ -52,6 +53,7 @@ public class Pez extends Animal {
 		listado.add(bacalao);
 		bacalaos++;
 		Animal.aumentaTotal(1);
+		return bacalao;
 	}
 
 	public static ArrayList<Pez> getListado() {

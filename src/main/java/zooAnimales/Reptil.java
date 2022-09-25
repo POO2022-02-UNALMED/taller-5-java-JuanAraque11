@@ -29,7 +29,7 @@ public class Reptil extends Animal {
 		return "reptar";
 	}
 	
-	public void crearIguana(String nombre, int edad, String genero) {
+	public static Reptil crearIguana(String nombre, int edad, String genero) {
 		String colorEscamas= "verde";
 		String habitat= "humedal";
 		int largoCola= 3;
@@ -38,9 +38,10 @@ public class Reptil extends Animal {
 		listado.add(iguana);
 		iguanas++;
 		Animal.aumentaTotal(1);
+		return iguana;
 	}
 	
-	public void crearSerpientes(String nombre, int edad, String genero) {
+	public static Reptil crearSerpientes(String nombre, int edad, String genero) {
 		String colorEscamas= "blanco";
 		String habitat= "jungla";
 		int largoCola= 1;
@@ -49,6 +50,7 @@ public class Reptil extends Animal {
 		listado.add(serpi);
 		serpientes++;
 		Animal.aumentaTotal(1);
+		return serpi;
 	}
 	
 	public static ArrayList<Reptil> getListado() {

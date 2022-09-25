@@ -29,7 +29,7 @@ public class Anfibio extends Animal {
 		return "saltar";
 	}
 	
-	public void crearRana(String nombre, int edad, String genero) {
+	public static Anfibio crearRana(String nombre, int edad, String genero) {
 		String colorPiel= "rojo";
 		boolean venenoso= true;
 		String habitat= "selva";
@@ -38,9 +38,10 @@ public class Anfibio extends Animal {
 		listado.add(rana);
 		ranas++;
 		Animal.aumentaTotal(1);
+		return rana;
 	}
 	
-	public void crearSalamandra(String nombre, int edad, String genero) {
+	public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
 		String colorPiel= "negro";
 		boolean venenoso= false;
 		String habitat= "selva";
@@ -49,6 +50,7 @@ public class Anfibio extends Animal {
 		listado.add(sala);
 		salamandras++;
 		Animal.aumentaTotal(1);
+		return sala;
 	}
 
 	public static ArrayList<Anfibio> getListado() {

@@ -29,7 +29,7 @@ public class Ave extends Animal {
 		return "volar";
 	}
 	
-	public void crearHalcon(String nombre, int edad, String genero) {
+	public static Ave crearHalcon(String nombre, int edad, String genero) {
 		String colorPlumas = "cafe glorioso";
 		String habitat = "montanas";
 		
@@ -37,10 +37,10 @@ public class Ave extends Animal {
 		listado.add(halcon);
 		halcones++;
 		Animal.aumentaTotal(1);
-		
+		return halcon;
 	}
 	
-	public void crearAguila(String nombre, int edad, String genero) {
+	public static Ave crearAguila(String nombre, int edad, String genero) {
 		String colorPlumas = "blanco y amarillo";
 		String habitat = "montanas";
 		
@@ -48,7 +48,7 @@ public class Ave extends Animal {
 		listado.add(agui);
 		aguilas ++;
 		Animal.aumentaTotal(1);
-		
+		return agui;
 	}
 
 	public static ArrayList<Ave> getListado() {
