@@ -20,7 +20,7 @@ public class Zona {
 		animales.add(nuevoAnimal);
 	}
 	
-	public static int cantidadAnimales() { /*Talvez es poner los get y set de primeros antes que este*/
+	public int cantidadAnimales() { /*Talvez es poner los get y set de primeros antes que este*/
 		return animales.size();
 	}
 
