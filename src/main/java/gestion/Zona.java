@@ -19,7 +19,7 @@ public void agregarAnimales(Animal animal) {
 }
 public int cantidadAnimales() {
 	return animales.size();
-	}
+}
 public Zoologico getZoo() {
 	return zoo;
 }
