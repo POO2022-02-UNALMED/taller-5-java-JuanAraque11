@@ -16,11 +16,11 @@ public class Zona {
 		this(null,null);
 	}
 
-	public void agregarAnimales(Animal nuevoAnimal) {
+	public static void agregarAnimales(Animal nuevoAnimal) {
 		animales.add(nuevoAnimal);
 	}
 	
-	public int cantidadAnimales() { /*Talvez es poner los get y set de primeros antes que este*/
+	public static int cantidadAnimales() { /*Talvez es poner los get y set de primeros antes que este*/
 		return animales.size();
 	}
 
