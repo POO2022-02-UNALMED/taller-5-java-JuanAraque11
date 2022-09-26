@@ -32,5 +32,11 @@ public String getNombre() {
 public void setNombre(String nombre) {
 	this.nombre=nombre;
 }
+public static ArrayList<Animal> getAnimales() {
+	return animales;
+}
 
+public static void setAnimales(ArrayList<Animal> animales) {
+	Zona.animales = animales;
+}
 }
