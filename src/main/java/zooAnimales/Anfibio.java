@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Anfibio extends Animal {
 
-	private static ArrayList<Anfibio> listado;
+	private static ArrayList<Anfibio> listado = new ArrayList<>();
 	public static int ranas;
 	public static int salamandras;
 	private String colorPiel;
@@ -37,7 +37,6 @@ public class Anfibio extends Animal {
 		Anfibio rana = new Anfibio(nombre, edad, habitat, genero, colorPiel, venenoso);
 		
 		ranas++;
-		Animal.aumentaTotal(1);
 		return rana;
 	}
 	
@@ -48,7 +47,6 @@ public class Anfibio extends Animal {
 		
 		Anfibio sala = new Anfibio(nombre, edad, habitat, genero, colorPiel, venenoso);
 		salamandras++;
-		Animal.aumentaTotal(1);
 		return sala;
 	}
 

@@ -14,6 +14,7 @@ public class Animal {
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
+		totalAnimales++;
 	}
 	
 	public Animal() {
@@ -22,9 +23,6 @@ public class Animal {
 
 	public String movimiento() {
 		return "desplazarse";
-	}
-	public static void aumentaTotal(int aume) {
-		totalAnimales = totalAnimales + aume;
 	}
 	
 	public static String totalPorTipo() {
